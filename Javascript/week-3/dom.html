@@ -11,27 +11,38 @@
         #btn{
             background-color: antiquewhite;
         }
+        .parentTodo{
+            background-color: bisque;
+        }
     </style>
 </head>
 <body>
 
     <h1>Todo List</h1>
-    <h4>1. Take Class</h4>
-    <h4>2. Go out to eat</h4>
-    <h4>3. Go to Gym</h4>
+    <div>
+        <div id="todo-1">
+            <h4>1. Take Class</h4>
+            <button onclick="deleteMe(1)">Delete Me 1</button>
+            <button onclick="addme()">Add Me Please</button>
+        </div>
 
+        <div id="todo-2">
+            <h4>2. Go out to eat</h4>
+            <button onclick="deleteMe(2)">Delete Me 2</button>
+        </div>
+
+        <div id="todo-3">
+            <h4>3. Go to Gym</h4>
+            <button onclick="deleteMe(3)">Delete Me 3</button>
+        </div>
+    </div>
+    <br>
+   
     <div>
         <input type="text" placeholder="Add your Todo here"></input>
         <button id="btn" onclick="addTodo()">Add Button</button>
     </div>
 
-    <script>
-        function addTodo(){
-            const inputElement = document.querySelector("input")
-            const userInput = inputElement.value;
-            console.log(userInput);
-        }
-        
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

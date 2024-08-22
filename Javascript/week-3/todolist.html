@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Application</title>
+</head>
+
+<body>
+    <center>
+        <h1>Todo Application</h1>
+        <div id="todoapp">
+            <input type="text">
+            <button onclick="addTodo()">Add Text</button>
+        </div>
+    </center>
+
+    <script>
+
+        function addTodo() {
+            const inputElement = document.querySelector("input");
+            const value = inputElement.value;
+
+            const newDivElement = document.createElement("div");
+            newDivElement.setAttribute("id", ctr);
+            ctrl = ctrl + 1;
+            newDivElement.innerHTML = "<div>" + value + "</div>" + "<button onclick='deleteElement()'>" + "Delete" + "</button>" + "<button onclick='updateElement()'>" + "Update" + "</button>" + "<br></br>";
+
+            document.querySelector("#todoapp").appendChild(newDivElement);
+        }
+
+        let ctr = 1;
+        function deleteElement() {
+            console.log("Delete is called.");
+        }
+
+        function updateElement() {
+
+        }
+
+    </script>
+</body>
+
+</html>
