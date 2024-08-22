@@ -18,6 +18,17 @@
 
     <script>
 
+        let ctr = 1;
+        // Deleting the element. 
+        function deleteElement(index) {
+            const element = document.getElementById(index);
+            element.parentNode.removeChild(element);
+        }
+
+        function updateElement() {
+
+        }
+        
         function addTodo() {
             const inputElement = document.querySelector("input");
             const value = inputElement.value;
@@ -25,18 +36,9 @@
             const newDivElement = document.createElement("div");
             newDivElement.setAttribute("id", ctr);
             ctrl = ctrl + 1;
-            newDivElement.innerHTML = "<div>" + value + "</div>" + "<button onclick='deleteElement()'>" + "Delete" + "</button>" + "<button onclick='updateElement()'>" + "Update" + "</button>" + "<br></br>";
+            newDivElement.innerHTML = "<div>" + value + "</div>" + "<button onclick='deleteElement(" + ctr + ")'>" + "Delete" + "</button>" + "<button onclick='updateElement()'>" + "Update" + "</button>" + "<br></br>";
 
             document.querySelector("#todoapp").appendChild(newDivElement);
-        }
-
-        let ctr = 1;
-        function deleteElement() {
-            console.log("Delete is called.");
-        }
-
-        function updateElement() {
-
         }
 
     </script>
