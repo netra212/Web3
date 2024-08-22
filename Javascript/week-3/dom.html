@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Manupulation</title>
+    <style>
+        h1{
+            font-size: 50px;
+        }
+        #btn{
+            background-color: antiquewhite;
+        }
+    </style>
 </head>
 <body>
-    
-    <!-- Document Object Model is a programming inteface for web-documents. It represent the structure of a web-pages as tree of objects.
-     DOM abstracts the structure of the document into a tree of objects, allowing scripts to manipulate the contents and structure dynamically. This abstraction enables more complex interactions and functionalities beyond just static HTML. -->
 
+    <h1>Todo List</h1>
+    <h4>1. Take Class</h4>
+    <h4>2. Go out to eat</h4>
+    <h4>3. Go to Gym</h4>
+
+    <div>
+        <input type="text" placeholder="Add your Todo here"></input>
+        <button id="btn" onclick="addTodo()">Add Button</button>
+    </div>
+
+    <script>
+        function addTodo(){
+            const inputElement = document.querySelector("input")
+            const userInput = inputElement.value;
+            console.log(userInput);
+        }
+        
+    </script>
 </body>
 </html>
