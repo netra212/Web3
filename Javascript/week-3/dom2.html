@@ -25,14 +25,17 @@
 
             const spanElement = document.createElement("span");
             const buttonElement = document.createElement("button");
+            const buttonUpdate = document.createElement("button");
             spanElement.innerHTML = inputElement;
             buttonElement.innerHTML = "Delete";
+            buttonUpdate.innerHTML = "Update";
 
             const divElement = document.createElement("div");
-            divElemen.appendChild(spanElement);
+            divElement.appendChild(spanElement);
             divElement.appendChild(buttonElement);
+            divElement.appendChild(buttonUpdate);
 
-            document.querySelector("body").appendChild(element);
+            document.querySelector("body").appendChild(divElement);
         }
 
     </script>
