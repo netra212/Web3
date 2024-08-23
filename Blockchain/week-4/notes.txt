@@ -1,0 +1,8 @@
+# Usecase:
+a. Creating Tokens. 
+b. Swapping Tokens. 
+c. Lending Money.
+
+
+Create a Program on Solana. 
+1. Deploy 
