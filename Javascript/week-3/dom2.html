@@ -1,0 +1,40 @@
+<!-- Complex DOM Manipulation. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Day 2</title>
+ </head>
+ <body>
+    <center>
+        <div id="todo-app">
+            <input type="text" id="input-text">
+            <button onclick="addTodo()" style="margin:200;">Add Todo</button>
+        </div>
+    </center>
+
+    <script>
+        function addTodo(){
+
+            // Fetching the value from the input tag. 
+            const inputElement = document.querySelector("input").value;
+
+            // const element = document.createElement("div");
+            // element.innerHTML = "<br></br>"+inputElement + "<button>" + "Delete" + "</button>" + "<button>" + "Update" + "</button>";
+
+            const spanElement = document.createElement("span");
+            const buttonElement = document.createElement("button");
+            spanElement.innerHTML = inputElement;
+            buttonElement.innerHTML = "Delete";
+
+            const divElement = document.createElement("div");
+            divElemen.appendChild(spanElement);
+            divElement.appendChild(buttonElement);
+
+            document.querySelector("body").appendChild(element);
+        }
+
+    </script>
+ </body>
+ </html>
