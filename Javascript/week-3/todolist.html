@@ -35,7 +35,9 @@
 
             const newDivElement = document.createElement("div");
             newDivElement.setAttribute("id", ctr);
+            
             ctrl = ctrl + 1;
+
             newDivElement.innerHTML = "<div>" + value + "</div>" + "<button onclick='deleteElement(" + ctr + ")'>" + "Delete" + "</button>" + "<button onclick='updateElement()'>" + "Update" + "</button>" + "<br></br>";
 
             document.querySelector("#todoapp").appendChild(newDivElement);
